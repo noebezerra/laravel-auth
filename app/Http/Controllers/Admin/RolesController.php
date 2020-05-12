@@ -41,7 +41,6 @@ class RolesController extends Controller
 
         $role->name = $request->name;
         
-        
         if ($role->save()) {
             $request->session()->flash('success', 'Grupo '.$role->name.' atualizado');
         } else {
